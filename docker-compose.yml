@@ -5,8 +5,8 @@ services:
     restart: unless-stopped
     build:
       context: ./
-      pull_policy: build
       dockerfile: Dockerfile
+    pull_policy: build
     volumes:
       - ./revanced/:/app/revanced-builder/revanced/
     ports:
