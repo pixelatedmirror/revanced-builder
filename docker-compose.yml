@@ -6,6 +6,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+      no_cache: true
     pull_policy: build
     volumes:
       - ./revanced/:/app/revanced-builder/revanced/
