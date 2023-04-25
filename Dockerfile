@@ -9,7 +9,7 @@ RUN apt-get --yes update && \
   rm /app/zulu.deb && \
   apt-get -f install
 
-COPY ./ /app/
+COPY ./ /app/revanced-builder
 
 WORKDIR /app/revanced-builder
 
